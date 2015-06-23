@@ -11,6 +11,8 @@
 
 @interface PFLogger : NSObject
 
-+ (void)logMessage:(NSString *)string;
++ (BOOL)logMessage:(NSString *)string;
+
+
 
 @end

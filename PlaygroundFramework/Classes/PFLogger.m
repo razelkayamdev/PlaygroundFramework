@@ -10,9 +10,18 @@
 
 @implementation PFLogger
 
-+ (void)logMessage:(NSString *)string
++ (BOOL)logMessage:(NSString *)string
 {
-    NSLog(@"%@", string);
+    BOOL didPrint = NO;
+    
+    if (string && [string length]) {
+        
+        NSLog(@"%@", string);
+        
+        didPrint = YES;
+    }
+    
+    return didPrint;
 }
 
 @end
