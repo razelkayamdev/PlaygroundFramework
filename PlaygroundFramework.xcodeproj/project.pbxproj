@@ -29,6 +29,7 @@
 		9243BF4C1B39B4B5004CEB18 /* PlaygroundFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9243BF2C1B39B3A8004CEB18 /* PlaygroundFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9243BF581B39B659004CEB18 /* PFLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9243BF561B39B659004CEB18 /* PFLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9243BF591B39B659004CEB18 /* PFLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9243BF571B39B659004CEB18 /* PFLogger.m */; };
+		9243BF5B1B39B873004CEB18 /* PFLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9243BF5A1B39B873004CEB18 /* PFLoggerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		9243BF471B39B446004CEB18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9243BF561B39B659004CEB18 /* PFLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFLogger.h; path = Classes/PFLogger.h; sourceTree = "<group>"; };
 		9243BF571B39B659004CEB18 /* PFLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFLogger.m; path = Classes/PFLogger.m; sourceTree = "<group>"; };
+		9243BF5A1B39B873004CEB18 /* PFLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoggerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		9243BF381B39B3A8004CEB18 /* PlaygroundFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				9243BF5A1B39B873004CEB18 /* PFLoggerTests.m */,
 				9243BF391B39B3A8004CEB18 /* Supporting Files */,
 			);
 			path = PlaygroundFrameworkTests;
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9243BF5B1B39B873004CEB18 /* PFLoggerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
