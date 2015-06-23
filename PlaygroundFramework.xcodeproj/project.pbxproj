@@ -403,6 +403,10 @@
 		9243BF3E1B39B3A8004CEB18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -416,6 +420,10 @@
 		9243BF3F1B39B3A8004CEB18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -491,6 +499,7 @@
 				9243BF3F1B39B3A8004CEB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9243BF401B39B3A8004CEB18 /* Build configuration list for PBXNativeTarget "PlaygroundFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +508,7 @@
 				9243BF421B39B3A8004CEB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9243BF4F1B39B5AE004CEB18 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +517,7 @@
 				9243BF511B39B5AE004CEB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
