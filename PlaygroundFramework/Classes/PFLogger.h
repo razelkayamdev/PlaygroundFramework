@@ -1,5 +1,5 @@
 //
-//  PlaygroundFramework.h
+//  PFLogger.h
 //  PlaygroundFramework
 //
 //  Created by Raz Elkayam on 6/23/15.
@@ -8,4 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <PlaygroundFramework/PFLogger.h>
+
+@interface PFLogger : NSObject
+
++ (void)logMessage:(NSString *)string;
+
+@end

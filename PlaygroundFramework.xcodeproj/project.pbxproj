@@ -6,14 +6,40 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9243BF4E1B39B5AE004CEB18 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9243BF4F1B39B5AE004CEB18 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				9243BF541B39B5C2004CEB18 /* ShellScript */,
+			);
+			dependencies = (
+				9243BF531B39B5BD004CEB18 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9243BF2D1B39B3A8004CEB18 /* PlaygroundFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9243BF2C1B39B3A8004CEB18 /* PlaygroundFramework.h */; };
-		9243BF2F1B39B3A8004CEB18 /* PlaygroundFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 9243BF2E1B39B3A8004CEB18 /* PlaygroundFramework.m */; };
 		9243BF351B39B3A8004CEB18 /* libPlaygroundFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9243BF291B39B3A8004CEB18 /* libPlaygroundFramework.a */; };
+		9243BF461B39B43B004CEB18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9243BF431B39B427004CEB18 /* UIKit.framework */; };
+		9243BF491B39B44C004CEB18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9243BF471B39B446004CEB18 /* Foundation.framework */; };
+		9243BF4C1B39B4B5004CEB18 /* PlaygroundFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9243BF2C1B39B3A8004CEB18 /* PlaygroundFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9243BF581B39B659004CEB18 /* PFLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9243BF561B39B659004CEB18 /* PFLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9243BF591B39B659004CEB18 /* PFLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9243BF571B39B659004CEB18 /* PFLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9243BF361B39B3A8004CEB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9243BF211B39B3A8004CEB18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9243BF281B39B3A8004CEB18;
+			remoteInfo = PlaygroundFramework;
+		};
+		9243BF521B39B5BD004CEB18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9243BF211B39B3A8004CEB18 /* Project object */;
 			proxyType = 1;
@@ -38,9 +64,12 @@
 /* Begin PBXFileReference section */
 		9243BF291B39B3A8004CEB18 /* libPlaygroundFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlaygroundFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9243BF2C1B39B3A8004CEB18 /* PlaygroundFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundFramework.h; sourceTree = "<group>"; };
-		9243BF2E1B39B3A8004CEB18 /* PlaygroundFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundFramework.m; sourceTree = "<group>"; };
 		9243BF341B39B3A8004CEB18 /* PlaygroundFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9243BF3A1B39B3A8004CEB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9243BF431B39B427004CEB18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9243BF471B39B446004CEB18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9243BF561B39B659004CEB18 /* PFLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFLogger.h; path = Classes/PFLogger.h; sourceTree = "<group>"; };
+		9243BF571B39B659004CEB18 /* PFLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFLogger.m; path = Classes/PFLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9243BF491B39B44C004CEB18 /* Foundation.framework in Frameworks */,
+				9243BF461B39B43B004CEB18 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				9243BF2C1B39B3A8004CEB18 /* PlaygroundFramework.h */,
-				9243BF2E1B39B3A8004CEB18 /* PlaygroundFramework.m */,
+				9243BF551B39B5FB004CEB18 /* Classes */,
+				9243BF451B39B42F004CEB18 /* Frameworks */,
 			);
 			path = PlaygroundFramework;
 			sourceTree = "<group>";
@@ -105,7 +137,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9243BF451B39B42F004CEB18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9243BF471B39B446004CEB18 /* Foundation.framework */,
+				9243BF431B39B427004CEB18 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9243BF551B39B5FB004CEB18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9243BF561B39B659004CEB18 /* PFLogger.h */,
+				9243BF571B39B659004CEB18 /* PFLogger.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9243BF4B1B39B499004CEB18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9243BF581B39B659004CEB18 /* PFLogger.h in Headers */,
+				9243BF4C1B39B4B5004CEB18 /* PlaygroundFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9243BF281B39B3A8004CEB18 /* PlaygroundFramework */ = {
@@ -115,6 +177,8 @@
 				9243BF251B39B3A8004CEB18 /* Sources */,
 				9243BF261B39B3A8004CEB18 /* Frameworks */,
 				9243BF271B39B3A8004CEB18 /* CopyFiles */,
+				9243BF4B1B39B499004CEB18 /* Headers */,
+				9243BF4D1B39B550004CEB18 /* Build Framework Script */,
 			);
 			buildRules = (
 			);
@@ -158,6 +222,9 @@
 					9243BF331B39B3A8004CEB18 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
+					9243BF4E1B39B5AE004CEB18 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = 9243BF241B39B3A8004CEB18 /* Build configuration list for PBXProject "PlaygroundFramework" */;
@@ -174,6 +241,7 @@
 			targets = (
 				9243BF281B39B3A8004CEB18 /* PlaygroundFramework */,
 				9243BF331B39B3A8004CEB18 /* PlaygroundFrameworkTests */,
+				9243BF4E1B39B5AE004CEB18 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -188,12 +256,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9243BF4D1B39B550004CEB18 /* Build Framework Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		9243BF541B39B5C2004CEB18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nFRAMEWORK_NAME=${PROJECT_NAME}\nINPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nFRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework\"\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nSDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nSDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$SDK_PLATFORM\" == \"iphoneos\" ]; then\nOTHER_PLATFORM=iphonesimulator\nelse\nOTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SDK_PLATFORM$ ]]; then\nOTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${OTHER_PLATFORM}${SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${OTHER_BUILT_PRODUCTS_DIR}/${INPUT_STATIC_LIB}\" \\\n\"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${FRAMEWORK_LOCATION}/Versions/A/${FRAMEWORK_NAME}\" \\\n\"${OTHER_BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}.framework/Versions/A/${FRAMEWORK_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9243BF251B39B3A8004CEB18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9243BF2F1B39B3A8004CEB18 /* PlaygroundFramework.m in Sources */,
+				9243BF591B39B659004CEB18 /* PFLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +309,11 @@
 			isa = PBXTargetDependency;
 			target = 9243BF281B39B3A8004CEB18 /* PlaygroundFramework */;
 			targetProxy = 9243BF361B39B3A8004CEB18 /* PBXContainerItemProxy */;
+		};
+		9243BF531B39B5BD004CEB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9243BF281B39B3A8004CEB18 /* PlaygroundFramework */;
+			targetProxy = 9243BF521B39B5BD004CEB18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -296,18 +399,26 @@
 		9243BF3E1B39B3A8004CEB18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		9243BF3F1B39B3A8004CEB18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
@@ -343,6 +454,20 @@
 			};
 			name = Release;
 		};
+		9243BF501B39B5AE004CEB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9243BF511B39B5AE004CEB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -368,6 +493,14 @@
 			buildConfigurations = (
 				9243BF411B39B3A8004CEB18 /* Debug */,
 				9243BF421B39B3A8004CEB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9243BF4F1B39B5AE004CEB18 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9243BF501B39B5AE004CEB18 /* Debug */,
+				9243BF511B39B5AE004CEB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
