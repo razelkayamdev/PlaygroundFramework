@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9243BF4E1B39B5AE004CEB18"
-               BuildableName = "Framework"
-               BlueprintName = "Framework"
+               BlueprintIdentifier = "9243BF281B39B3A8004CEB18"
+               BuildableName = "libPlaygroundFramework.a"
+               BlueprintName = "PlaygroundFramework"
+               ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9243BF331B39B3A8004CEB18"
+               BuildableName = "PlaygroundFrameworkTests.xctest"
+               BlueprintName = "PlaygroundFrameworkTests"
                ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,9 +40,29 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9243BF331B39B3A8004CEB18"
+               BuildableName = "PlaygroundFrameworkTests.xctest"
+               BlueprintName = "PlaygroundFrameworkTests"
+               ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9243BF281B39B3A8004CEB18"
+            BuildableName = "libPlaygroundFramework.a"
+            BlueprintName = "PlaygroundFramework"
+            ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9243BF4E1B39B5AE004CEB18"
-            BuildableName = "Framework"
-            BlueprintName = "Framework"
+            BlueprintIdentifier = "9243BF281B39B3A8004CEB18"
+            BuildableName = "libPlaygroundFramework.a"
+            BlueprintName = "PlaygroundFramework"
             ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9243BF4E1B39B5AE004CEB18"
-            BuildableName = "Framework"
-            BlueprintName = "Framework"
+            BlueprintIdentifier = "9243BF281B39B3A8004CEB18"
+            BuildableName = "libPlaygroundFramework.a"
+            BlueprintName = "PlaygroundFramework"
             ReferencedContainer = "container:PlaygroundFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
