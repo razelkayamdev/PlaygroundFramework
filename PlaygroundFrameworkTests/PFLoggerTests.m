@@ -31,10 +31,10 @@
     XCTAssert([PFLogger logMessage:@"mesage"]);
 }
 
-- (void)testNotPrinting
-{
-    XCTAssertFalse([PFLogger logMessage:@""]);
-    XCTAssertFalse([PFLogger logMessage:nil]);
-}
+//- (void)testNotPrinting
+//{
+//    XCTAssertFalse([PFLogger logMessage:@""]);
+//    XCTAssertFalse([PFLogger logMessage:nil]);
+//}
 
 @end
