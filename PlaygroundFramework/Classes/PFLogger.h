@@ -13,6 +13,4 @@
 
 + (BOOL)logMessage:(NSString *)string;
 
-
-
 @end
