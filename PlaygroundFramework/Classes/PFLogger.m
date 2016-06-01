@@ -16,7 +16,7 @@
     
     if (string && [string length]) {
         
-        NSLog(@"%@", string);
+        NSLog(@"(v.1.0.0) %@", string);
         
         didPrint = YES;
     }
